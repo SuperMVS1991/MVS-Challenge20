@@ -1,12 +1,9 @@
 import React from "react";
-import { Link } from "react-router-dom";
-
+import Navigation from "../components/navigation";
 function Homepage() {
     return (
         <div>
-        <h1>Homepage</h1>
-        <Link to="/about">About</Link>
-        <Link to="/contact">Contact</Link>
+      <Navigation />
         </div>
     );
     }
