@@ -4,7 +4,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 function Navigation() {
   return (
-    <nav className="navbar navbar-expand-lg">
+    
+    <nav className="navbar navbar-expand-lg card">
       <div className="container-fluid">
         <Link className="navbar-brand" to="/">
           Michael Slotnick's Portfolio
