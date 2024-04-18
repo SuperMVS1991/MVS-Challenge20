@@ -1,10 +1,11 @@
 import Navigation from "../components/navigation";
-
+import Mike from "../Mike.JPG";
 function About() {
   return (
     <div>
       <Navigation />
       <div className="navbar navbar-expand-lg card">
+        <img className="col-8"src={Mike} alt="Mike" />
         <h1>About</h1>
         <p>
           I am a web developer and desktop technician. I am a graduate of the
