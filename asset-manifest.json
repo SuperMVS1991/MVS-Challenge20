@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/MVS-Challenge20/static/css/main.20cbcd6e.css",
+    "main.js": "/MVS-Challenge20/static/js/main.299e7dad.js",
+    "static/js/453.ad6eb26e.chunk.js": "/MVS-Challenge20/static/js/453.ad6eb26e.chunk.js",
+    "static/media/Mike.JPG": "/MVS-Challenge20/static/media/Mike.db964589f1b6d7454ca6.JPG",
+    "static/media/nyc_background_1.png": "/MVS-Challenge20/static/media/nyc_background_1.2549c629c8e9ae195a8a.png",
+    "static/media/MWF_1.png": "/MVS-Challenge20/static/media/MWF_1.392399cd644e2f371cd2.png",
+    "static/media/MarvelMind_1.png": "/MVS-Challenge20/static/media/MarvelMind_1.2e2729ec61de64310000.png",
+    "static/media/Challenge_14.png": "/MVS-Challenge20/static/media/Challenge_14.984e9a7d80fbdc3e4123.png",
+    "static/media/Challenge_3.png": "/MVS-Challenge20/static/media/Challenge_3.22891705da8d2b6f95e1.png",
+    "index.html": "/MVS-Challenge20/index.html",
+    "main.20cbcd6e.css.map": "/MVS-Challenge20/static/css/main.20cbcd6e.css.map",
+    "main.299e7dad.js.map": "/MVS-Challenge20/static/js/main.299e7dad.js.map",
+    "453.ad6eb26e.chunk.js.map": "/MVS-Challenge20/static/js/453.ad6eb26e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.20cbcd6e.css",
+    "static/js/main.299e7dad.js"
+  ]
+}
