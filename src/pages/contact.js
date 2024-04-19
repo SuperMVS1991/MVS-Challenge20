@@ -1,66 +1,80 @@
-import { useState } from "react"; 
-import Swal from "sweetalert2"; 
-import emailjs from "emailjs-com";
+import { useState } from "react";
+import Swal from "sweetalert2";
+import emailjs from "emailjs-com"; 
+import Navigation from "../components/navigation";
 
-
-function Contact() { 
-    var [name, setName] = useState(""); 
-    var [email, setEmail] = useState(""); 
-    var [message, setMessage] = useState("");
+function Contact() {
+    const [formState, setFormState] = useState({ name: "", email: "", message: "" });
 
     function handleNameChange(event) {
-        setName(event.target.value);
+        setFormState({ ...formState, name: event.target.value });
+        console.log(formState);
     }
+
     function handleEmailChange(event) {
-        setEmail(event.target.value);
+        setFormState({ ...formState, email: event.target.value });
+        console.log(formState);
     }
+
     function handleMessageChange(event) {
-        setMessage(event.target.value);
+        setFormState({ ...formState, message: event.target.value });
+        console.log(formState);
     }
+
     function handleSubmit(event) {
         event.preventDefault();
-        console.log(event); 
-        emailjs.sendForm("service_1qz5z9d", "template_1qz5z9d", event.target, "user_1qz5z9d")
-        .then((result) => {
-            console.log(result.text);
-            Swal.fire({
-                title: "Message Sent",
-                text: "I will get back to you as soon as possible",
-                icon: "success",
-                confirmButtonText: "Cool",
-            });
-        }, (error) => {
-            console.log(error.text);
-            Swal.fire({
-                title: "Error",
-                text: "There was an error sending your message",
-                icon: "error",
-                confirmButtonText: "Ok",
-            });
-        });
+        console.log(formState);
+        emailjs
+            .sendForm("service_2thkqxq", "template_37dslsm", event.target, "I9UnG6riz9IxRItpS")
+            .then(
+                (result) => {
+                    console.log(result.text);
+                    Swal.fire({
+                        title: "Message Sent",
+                        text: "I will get back to you as soon as possible",
+                        icon: "success",
+                        confirmButtonText: "Cool",
+                    });
+                },
+                (error) => {
+                    console.log(error.text);
+                    Swal.fire({
+                        title: "Error",
+                        text: "There was an error sending your message",
+                        icon: "error",
+                        confirmButtonText: "Ok",
+                    });
+                }
+            );
+        event.target.reset();
     }
-  return (
-    <div className="card">
-      <h1 className="text-align-center">Contact</h1>
 
+    return (
+        <div>
+        <Navigation />
+        <div className="card background">
+            <h1 className="text-align-center">Contact</h1>
 
-    <form className="col-12 d-flex flex-column justify-content-center align-items-center"> 
-        <label className="col-8 d-flex flex-column my-3">
-            Name: 
-            <input className="" onBlur={handleNameChange} type="text" name="name" />
-        </label>
-        <label className="col-8 d-flex flex-column my-3">
-            Email: 
-            <input type="text" onBlur={handleEmailChange} name="email" />
-        </label>
-        <label className="col-8 d-flex flex-column my-3">
-            Message: 
-            <textarea name="message" onBlur={handleMessageChange} />
-        </label>
-        <button className="btn btn-primary col-4 my-3" onClick={handleSubmit} type="submit">Submit</button>
-    </form> 
-    </div>
-  );
+            <form className="col-12 d-flex flex-column justify-content-center align-items-center" onSubmit={handleSubmit}>
+                <label htmlFor="name" className="col-8 d-flex flex-column my-3">
+                    Name:
+                    <input defaultValue={formState.name} onBlur={handleNameChange} type="text" name="name" />
+                </label>
+                <label htmlFor="email" className="col-8 d-flex flex-column my-3">
+                    Email:
+                    <input defaultValue={formState.email} onBlur={handleEmailChange} type="text" name="email" />
+                </label>
+                <label htmlFor="message" className="col-8 d-flex flex-column my-3">
+                    Message:
+                    <textarea defaultValue={formState.message} onBlur={handleMessageChange} name="message" />
+                </label>
+                <button className="btn btn-primary col-4 my-3" type="submit">
+                    Submit
+                </button>
+            </form>
+        </div> 
+        </div> 
+    );
 }
 
 export default Contact;

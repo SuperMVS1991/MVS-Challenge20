@@ -4,7 +4,7 @@ function About() {
   return (
     <div>
       <Navigation />
-      <div className="navbar navbar-expand-lg card">
+      <div className="navbar navbar-expand-lg card background">
         <img className="col-8"src={Mike} alt="Mike" />
         <h1>About</h1>
         <p>
