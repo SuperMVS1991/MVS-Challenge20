@@ -1,7 +1,8 @@
 import { useState } from "react";
 import Swal from "sweetalert2";
 import emailjs from "emailjs-com"; 
-import Navigation from "../components/navigation";
+import Navigation from "../components/navigation";  
+import { Link } from "react-router-dom";
 
 function Contact() {
     const [formState, setFormState] = useState({ name: "", email: "", message: "" });
@@ -54,7 +55,7 @@ function Contact() {
         <Navigation />
         <div className="card background">
             <h1 className="text-align-center">Contact</h1>
-
+            <Link to="https://linkedin.com/in/michael-slotnick-24a870164" target="_blank">My linkedin</Link>
             <form className="col-12 d-flex flex-column justify-content-center align-items-center" onSubmit={handleSubmit}>
                 <label htmlFor="name" className="col-8 d-flex flex-column my-3">
                     Name:

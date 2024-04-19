@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+Web Developer Portfolio
+Overview
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This single-page application portfolio showcases a web developer's work, providing easy navigation and detailed sections about the developer, their projects, contact information, and resume.
+Features
 
-## Available Scripts
+    Header: Presents the developer's name and navigation with titles corresponding to different sections of the portfolio.
+    Navigation Titles: Includes About Me, Portfolio, Contact, and Resume; the current section title is highlighted.
+    Interactive Navigation: Clicking a navigation title displays the corresponding section below without page reloading.
+    Default Section: The About Me section is selected by default when loading the portfolio.
+    About Me Section: Includes a recent photo or avatar of the developer and a short bio.
+    Portfolio Section: Displays titled images of six applications with links to deployed apps and GitHub repositories.
+    Contact Section: Provides a contact form with required fields for name, email address, and message.
+    Form Validation: Notifies users if a required field is left empty or if an invalid email address is entered.
+    Resume Section: Includes a link to download the developer's resume and a list of proficiencies.
+    Footer: Contains text or icon links to the developer's GitHub, LinkedIn, and a third platform profile.
 
-In the project directory, you can run:
+Getting Started
 
-### `npm start`
+    Clone the repository to your local machine:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+    bash
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+git clone https://github.com/your-username/portfolio.git
 
-### `npm test`
+Navigate to the project directory:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+bash
 
-### `npm run build`
+cd portfolio
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Install dependencies:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+bash
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+npm install
 
-### `npm run eject`
+Run the application:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+bash
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    npm start
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+    Open your browser and navigate to http://localhost:3000 to view the portfolio.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Technologies Used
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+    React.js
+    HTML/CSS
+    JavaScript
+    Bootstrap (optional)
